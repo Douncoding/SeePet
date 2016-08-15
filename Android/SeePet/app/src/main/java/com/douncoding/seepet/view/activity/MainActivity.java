@@ -37,10 +37,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Navigator.navigateToLive(this);
                 break;
             case R.id.video:
-
+                Navigator.navigateToMedia(this);
                 break;
             case R.id.motor:
-
+                Navigator.navigateToMotor(this);
                 break;
         }
     }

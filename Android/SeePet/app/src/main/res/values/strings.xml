@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SeePet</string>
+    <string name="title_activity_motor">모터제어</string>
 </resources>
