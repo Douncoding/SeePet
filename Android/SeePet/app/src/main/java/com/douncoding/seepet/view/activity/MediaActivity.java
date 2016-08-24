@@ -162,6 +162,9 @@ public class MediaActivity extends BaseActivity {
         @Override
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
+
+            if (s == null) return;
+
             try {
                 List<String> mediaList = new ArrayList<>();
                 JSONArray array = new JSONArray(s);

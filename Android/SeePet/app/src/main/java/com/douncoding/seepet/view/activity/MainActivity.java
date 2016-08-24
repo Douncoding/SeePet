@@ -3,6 +3,7 @@ package com.douncoding.seepet.view.activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.douncoding.seepet.Navigator;
@@ -10,18 +11,18 @@ import com.douncoding.seepet.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button mLiveButton;
-    Button mVideoButton;
-    Button mMotorButton;
+    ViewGroup mLiveButton;
+    ViewGroup mVideoButton;
+    ViewGroup mMotorButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mLiveButton = (Button)findViewById(R.id.live);
-        mVideoButton = (Button)findViewById(R.id.video);
-        mMotorButton = (Button)findViewById(R.id.motor);
+        mLiveButton = (ViewGroup)findViewById(R.id.live);
+        mVideoButton = (ViewGroup)findViewById(R.id.video);
+        mMotorButton = (ViewGroup)findViewById(R.id.motor);
 
         mLiveButton.setOnClickListener(this);
         mVideoButton.setOnClickListener(this);
